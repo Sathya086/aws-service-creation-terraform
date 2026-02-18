@@ -1,0 +1,13 @@
+output "vpc_id" { value = module.vpc.vpc_id }
+output "sg_id" { value = module.security_group.sg_id }
+output "ec2_id" { value = module.ec2.instance_id }
+output "s3_bucket" { value = module.s3.bucket_id }
+# output "rds_endpoint" { value = module.rds.rds_endpoint }
+output "dynamodb_table" { value = module.dynamodb.table_name }
+output "lambda_arn" { value = module.lambda.lambda_arn }
+output "route53_fqdn" { value = module.route53.record_fqdn }
+output "alb_dns" { value = module.alb.alb_dns }
+output "kms_key_id" { value = module.kms.key_id }
+output "efs_id" { value = module.efs.efs_id }
+output "ebs_id" { value = module.ebs.volume_id }
+output "sns_topic" { value = module.sns.topic_arn }
